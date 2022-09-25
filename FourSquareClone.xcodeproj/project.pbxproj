@@ -13,6 +13,8 @@
 		5D38A77828E0819D00BD3E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D38A77628E0819D00BD3E7F /* Main.storyboard */; };
 		5D38A77A28E0819D00BD3E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D38A77928E0819D00BD3E7F /* Assets.xcassets */; };
 		5D38A77D28E0819D00BD3E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D38A77B28E0819D00BD3E7F /* LaunchScreen.storyboard */; };
+		5DFE65FC28E0B5D500C6E6BE /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE65FB28E0B5D500C6E6BE /* PlacesViewController.swift */; };
+		F155DD0C02502CE81BDD8D5A /* Pods_FourSquareClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6341AE2A7DE5D658BC4040D /* Pods_FourSquareClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		5D38A77928E0819D00BD3E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D38A77C28E0819D00BD3E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D38A77E28E0819D00BD3E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DFE65FB28E0B5D500C6E6BE /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		A6341AE2A7DE5D658BC4040D /* Pods_FourSquareClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourSquareClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27ED924283B0AEA9F62F862 /* Pods-FourSquareClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareClone.release.xcconfig"; path = "Target Support Files/Pods-FourSquareClone/Pods-FourSquareClone.release.xcconfig"; sourceTree = "<group>"; };
+		CF24CF9D1129086B2A66369F /* Pods-FourSquareClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareClone.debug.xcconfig"; path = "Target Support Files/Pods-FourSquareClone/Pods-FourSquareClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F155DD0C02502CE81BDD8D5A /* Pods_FourSquareClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				5D38A76F28E0819D00BD3E7F /* FourSquareClone */,
 				5D38A76E28E0819D00BD3E7F /* Products */,
+				B4CD673F2186396AA89165DF /* Pods */,
+				9DF1D4966200B99E6031F4C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +68,30 @@
 				5D38A77028E0819D00BD3E7F /* AppDelegate.swift */,
 				5D38A77228E0819D00BD3E7F /* SceneDelegate.swift */,
 				5D38A77428E0819D00BD3E7F /* ViewController.swift */,
+				5DFE65FB28E0B5D500C6E6BE /* PlacesViewController.swift */,
 				5D38A77628E0819D00BD3E7F /* Main.storyboard */,
 				5D38A77928E0819D00BD3E7F /* Assets.xcassets */,
 				5D38A77B28E0819D00BD3E7F /* LaunchScreen.storyboard */,
 				5D38A77E28E0819D00BD3E7F /* Info.plist */,
 			);
 			path = FourSquareClone;
+			sourceTree = "<group>";
+		};
+		9DF1D4966200B99E6031F4C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6341AE2A7DE5D658BC4040D /* Pods_FourSquareClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4CD673F2186396AA89165DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF24CF9D1129086B2A66369F /* Pods-FourSquareClone.debug.xcconfig */,
+				B27ED924283B0AEA9F62F862 /* Pods-FourSquareClone.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D38A78128E0819D00BD3E7F /* Build configuration list for PBXNativeTarget "FourSquareClone" */;
 			buildPhases = (
+				4D6A471E65836DF7A0E716FD /* [CP] Check Pods Manifest.lock */,
 				5D38A76928E0819C00BD3E7F /* Sources */,
 				5D38A76A28E0819C00BD3E7F /* Frameworks */,
 				5D38A76B28E0819C00BD3E7F /* Resources */,
+				CE60348DEF674E503788232C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D6A471E65836DF7A0E716FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourSquareClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE60348DEF674E503788232C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourSquareClone/Pods-FourSquareClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourSquareClone/Pods-FourSquareClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FourSquareClone/Pods-FourSquareClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D38A76928E0819C00BD3E7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFE65FC28E0B5D500C6E6BE /* PlacesViewController.swift in Sources */,
 				5D38A77528E0819D00BD3E7F /* ViewController.swift in Sources */,
 				5D38A77128E0819D00BD3E7F /* AppDelegate.swift in Sources */,
 				5D38A77328E0819D00BD3E7F /* SceneDelegate.swift in Sources */,
@@ -282,6 +354,7 @@
 		};
 		5D38A78228E0819D00BD3E7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF24CF9D1129086B2A66369F /* Pods-FourSquareClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +366,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +383,7 @@
 		};
 		5D38A78328E0819D00BD3E7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B27ED924283B0AEA9F62F862 /* Pods-FourSquareClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +395,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
