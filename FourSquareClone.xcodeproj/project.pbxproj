@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D05254D28E5EC1100B63F38 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05254C28E5EC1100B63F38 /* DetailsViewController.swift */; };
+		5D05254F28E5F17800B63F38 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D05254E28E5F17800B63F38 /* PlaceModel.swift */; };
 		5D38A77128E0819D00BD3E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A77028E0819D00BD3E7F /* AppDelegate.swift */; };
 		5D38A77328E0819D00BD3E7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A77228E0819D00BD3E7F /* SceneDelegate.swift */; };
 		5D38A77528E0819D00BD3E7F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A77428E0819D00BD3E7F /* SignUpVC.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D05254C28E5EC1100B63F38 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		5D05254E28E5F17800B63F38 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		5D38A76D28E0819D00BD3E7F /* FourSquareClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquareClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D38A77028E0819D00BD3E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D38A77228E0819D00BD3E7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				5DFE65FB28E0B5D500C6E6BE /* PlacesViewController.swift */,
 				5DED949C28E1CC410003B8EB /* AddPlacesViewController.swift */,
 				5DED949E28E1CE3C0003B8EB /* MapVC.swift */,
+				5D05254C28E5EC1100B63F38 /* DetailsViewController.swift */,
+				5D05254E28E5F17800B63F38 /* PlaceModel.swift */,
 				5D38A77628E0819D00BD3E7F /* Main.storyboard */,
 				5D38A77928E0819D00BD3E7F /* Assets.xcassets */,
 				5D38A77B28E0819D00BD3E7F /* LaunchScreen.storyboard */,
@@ -216,9 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DED949D28E1CC410003B8EB /* AddPlacesViewController.swift in Sources */,
+				5D05254F28E5F17800B63F38 /* PlaceModel.swift in Sources */,
 				5DED949F28E1CE3C0003B8EB /* MapVC.swift in Sources */,
 				5DFE65FC28E0B5D500C6E6BE /* PlacesViewController.swift in Sources */,
 				5D38A77528E0819D00BD3E7F /* SignUpVC.swift in Sources */,
+				5D05254D28E5EC1100B63F38 /* DetailsViewController.swift in Sources */,
 				5D38A77128E0819D00BD3E7F /* AppDelegate.swift in Sources */,
 				5D38A77328E0819D00BD3E7F /* SceneDelegate.swift in Sources */,
 			);
