@@ -93,10 +93,11 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
                 let okButton = UIAlertAction(title: "ok", style: UIAlertAction.Style.default)
                 alert.addAction(okButton)
                 self.present(alert, animated: true)
-               
+                
             } else {
                 self.performSegue(withIdentifier: "fromMapVCtoPlacesVC", sender: nil)
             }
+            self.performSegue(withIdentifier: "fromMapVCtoPlacesVC", sender: nil)
         }
     }
 }

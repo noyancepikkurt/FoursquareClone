@@ -22,8 +22,14 @@ class AddPlacesViewController: UIViewController, UIImagePickerControllerDelegate
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(chooseImage))
         placeImageView.addGestureRecognizer(gestureRecognizer)
         
-        
+        let TapgestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(TapgestureRecognizer)
     }
+    
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+    
     
 
     @objc func chooseImage() {
